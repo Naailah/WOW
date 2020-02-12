@@ -17,10 +17,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 
 public class AppTest {
-
+	private String BROWSER=System.getProperty("browser");
 	
 	WebDriver driver;
-	String b = "firefox";
+	String b = BROWSER;
 	String url= "https://fr.wowhead.com/";
 	
 	@Before
